@@ -48,10 +48,10 @@ And this to your dependencies:
 
 ```groovy
 // build.gradle
-modImplementation("com.sarahisweird:WeirdChat:1.0")
+modImplementation("com.sarahisweird:WeirdChat:1.0.0")
 
 // build.gradle.kts
-modImplementation("com.sarahisweird", "WeirdChat", "1.0")
+modImplementation("com.sarahisweird", "WeirdChat", "1.0.0")
 ```
 
 ## Building WeirdChat from source
