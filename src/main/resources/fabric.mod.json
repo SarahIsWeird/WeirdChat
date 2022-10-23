@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "weirdchat",
+    "version": "${version}",
+    "name": "WeirdChat",
+    "description": "Adds extensible emoji support to Minecraft.",
+    "authors": [
+        "SarahIsWeird"
+    ],
+    "contact": {
+        "homepage": "https://github.com/SarahIsWeird/WeirdChat",
+        "issues": "https://github.com/SarahIsWeird/WeirdChat/issues",
+        "sources": "https://github.com/SarahIsWeird/WeirdChat"
+    },
+    "license": "WTFPL",
+    "icon": "assets/weirdchat/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "main": [
+            {
+                "adapter": "kotlin",
+                "value": "com.sarahisweird.weirdchat.WeirdChatClient"
+            }
+        ]
+    },
+    "mixins": [
+        "weirdchat.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${fabricloader}",
+        "fabric-api": ">=${fabric_api}",
+        "fabric-language-kotlin": ">=${fabric_language_kotlin}",
+        "minecraft": ">=${minecraft}",
+        "java": ">=${java}",
+        "morechatsuggestions": ">=${mcs}"
+    }
+}

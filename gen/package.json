@@ -1,0 +1,23 @@
+{
+    "name": "weirdchat-asset-generator",
+    "version": "1.0.0",
+    "description": "Generates assets for the WeirdChat mod.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SarahIsWeird/WeirdChat.git"
+    },
+    "author": "SarahIsWeird",
+    "license": "WTFPL",
+    "bugs": {
+        "url": "https://github.com/SarahIsWeird/WeirdChat/issues"
+    },
+    "homepage": "https://github.com/SarahIsWeird/WeirdChat#readme",
+    "dependencies": {
+        "jimp": "^0.16.2",
+        "twemoji": "^14.0.2"
+    }
+}
