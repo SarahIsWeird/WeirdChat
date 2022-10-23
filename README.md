@@ -15,7 +15,7 @@ You can use a resource pack to change the emoji images. If you intend to do so, 
 
 - fabric-api >= `0.64.0+1.19.2`
 - fabric-language-kotlin >= `1.8.5+kotlin.1.7.20`
-- MoreChatSuggestions >= `1.0`
+- MoreChatSuggestions >= `1.0.2`
 
 ## Planned features
 
