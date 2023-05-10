@@ -26,7 +26,7 @@ object WeirdChatClient : ModInitializer {
     private val logger: Logger = LogManager.getLogger(this::class.java)
 
     override fun onInitialize() {
-        ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(dataReloadListener)
+        ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(dataReloadListener)
         ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(clientResourceReloadListener)
 
         logger.info("Initialized WeirdChat.")
@@ -35,7 +35,7 @@ object WeirdChatClient : ModInitializer {
     private val dataReloadListener = object : SimpleSynchronousResourceReloadListener {
         override fun reload(manager: ResourceManager) {
             try {
-                val fileId = Identifier("weirdchat", "emoji.json");
+                val fileId = Identifier("weirdchat", "emoji.json")
                 val resource = manager.getResource(fileId).get()
 
                 resource.reader.use {
@@ -52,6 +52,8 @@ object WeirdChatClient : ModInitializer {
             val suggestions = emojiAlphaCodes.map(EmojiAlphaCode::alias)
 
             MoreChatSuggestions.registerSuggestions(suggestionClass, suggestions) { it.startsWith(":") }
+
+            logger.info("Registered ${suggestions.size} chat suggestions for ID \"${suggestionClass}\".")
         }
 
         override fun getFabricId(): Identifier {

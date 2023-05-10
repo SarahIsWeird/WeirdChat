@@ -13,9 +13,9 @@ You can use a resource pack to change the emoji images. If you intend to do so, 
 
 ## Dependencies
 
-- fabric-api >= `0.64.0+1.19.2`
-- fabric-language-kotlin >= `1.8.5+kotlin.1.7.20`
-- MoreChatSuggestions >= `1.0.2`
+- fabric-api >= `0.78.0+1.19.4`
+- fabric-language-kotlin >= `1.9.3+kotlin.1.8.20`
+- MoreChatSuggestions >= `1.0.3`
 
 ## Planned features
 
@@ -48,10 +48,10 @@ And this to your dependencies:
 
 ```groovy
 // build.gradle
-modImplementation("com.sarahisweird:WeirdChat:1.0.0")
+modImplementation("com.sarahisweird:WeirdChat:1.0.2")
 
 // build.gradle.kts
-modImplementation("com.sarahisweird", "WeirdChat", "1.0.0")
+modImplementation("com.sarahisweird", "WeirdChat", "1.0.2")
 ```
 
 ## Building WeirdChat from source

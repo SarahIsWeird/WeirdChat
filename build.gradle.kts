@@ -29,7 +29,7 @@ dependencies {
 
     modImplementation("com.sarahisweird", "morechatsuggestions", mcsVersion)
 
-    modLocalRuntime("com.terraformersmc", "modmenu", "4.0.6")
+    modLocalRuntime("com.terraformersmc", "modmenu", "6.1.0")
 }
 
 tasks {
